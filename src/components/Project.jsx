@@ -1,7 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { projects } from "../App";
-import "./project.css";
+// import { projects } from "../App";
+import { projects } from "../data/projects";
+import "./Project.css";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const Project = () => {

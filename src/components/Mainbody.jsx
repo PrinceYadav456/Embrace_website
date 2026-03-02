@@ -1,8 +1,9 @@
 import React from "react";
-import "./mainbody.css";
+import "./Mainbody.css";
 //import myimage from "../assets/image1.webp";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const Mainbody = ({ image, title, name, id }) => {
