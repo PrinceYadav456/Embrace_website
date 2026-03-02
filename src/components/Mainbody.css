@@ -1,0 +1,55 @@
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+  min-height: 100vh;
+  background: white;
+  position: relative;
+  transition: 0.6s ease;
+}
+
+/* TEXT default (Home page) */
+.text-section {
+  transition: 0.6s ease;
+  color: black;
+}
+
+/* When on project page */
+.main-container.active .text-section {
+  transform: translateX(-400px); /* move left */
+  color: white;
+}
+
+.text-section {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slash {
+  display: inline-block;
+  margin-left: 150px; /* adjust space */
+  
+}
+
+.image-section img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.text-section h1 {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+}
+
+.author {
+    margin-left: 150px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}

@@ -1,0 +1,89 @@
+.project-page {
+  min-height: 100vh;
+  transition: 0.4s ease;
+}
+
+/* ===== MAIN ROW ===== */
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  height: 100vh;
+}
+
+/* ===== LEFT SIDE ===== */
+.project-left {
+  width: 25%;
+  padding-left: 110px;
+  padding-top: 100px;
+  cursor: default;
+}
+
+
+
+.project-title {
+  font-size: 130px;
+  line-height: 0.85;
+  font-weight: 700;
+  position: relative;
+  z-index: 5;
+}
+
+.project-title span {
+  font-weight: 300;
+}
+
+.project-name {
+  margin-top: 60px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+
+/* ===== CENTER IMAGE ===== */
+.project-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-image img {
+  width: 110%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* ===== RIGHT SIDE ===== */
+.project-info {
+  width: 25%;
+  font-size: 14px;
+  line-height: 1;
+  padding-top: 450px;
+  padding-left: 50px;
+}
+
+
+
+.info-block {
+  margin-bottom: 20px;
+}
+
+.info-label {
+  /* font-weight: bold; */
+  margin-bottom: 5px;
+}
+
+/* ===== GALLERY BELOW ===== */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding: 100px 10%;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

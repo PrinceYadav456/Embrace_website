@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 60px;
+  z-index: 100;
+  background: transparent; /* match background */
+  font-size: 12px;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+  align-items: start;
+}
+
+.logo {
+  font-weight: bolder;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+.contact,
+.services,
+.social,
+.menu {
+  line-height: 1.6;
+}
+
+.menu {
+  text-align: right;
+}
