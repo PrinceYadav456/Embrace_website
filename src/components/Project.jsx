@@ -6,6 +6,7 @@ import "./Project.css";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
+
 const Project = () => {
   const { id } = useParams();
   const project = projects.find((p) => p.id === parseInt(id));
@@ -72,9 +73,30 @@ const Project = () => {
       {/* GALLERY BELOW */}
       {project.images && (
         <div className="gallery">
-          {project.images.map((img, index) => (
-            <img key={index} src={img} alt="" />
-          ))}
+          {project.images.map((img, index) => {
+
+  /* check if file is video */
+  if (typeof img === "string" && img.endsWith(".mp4")) {
+    return (
+      <video
+        key={index}
+        src={img}
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls
+         className="project-video"
+      />
+    );
+  }
+
+  /* otherwise render image */
+  return (
+    <img key={index} src={img} alt="" />
+  );
+
+})}
         </div>
       )}
     </div>

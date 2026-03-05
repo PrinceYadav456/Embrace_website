@@ -32,8 +32,7 @@
 
 /* Responsive adjustment for mobile */
 @media (max-width: 768px) {
-  .portfolio-footer {
-    padding: 20px;
-    font-size: 10px;
+   .portfolio-footer {
+    display: none;
   }
 }

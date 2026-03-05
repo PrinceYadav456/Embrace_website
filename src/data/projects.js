@@ -101,6 +101,7 @@ export const projects = [
       p2_3,
       p2_4,
       p2_5,
+      "/videos/project2.mp4", // video file for motion design
     ],
   },
   {
