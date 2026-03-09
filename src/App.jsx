@@ -6,7 +6,9 @@ import Footer from "./components/Footer";
 import Mainbody from "./components/Mainbody";
 import Project from "./components/Project";
 import { projects } from "./data/projects";
+import Wheel from "./components/Wheel";
 
+// import Wheel from "./components/Wheel";   // added
 
 /* ================= APP ================= */
 
@@ -35,15 +37,7 @@ function Layout() {
           path="/"
           element={
             <>
-              {projects.map((project) => (
-                <Mainbody
-                  key={project.id}
-                  id={project.id}
-                  image={project.img}
-                  title={project.title}
-                  name={project.name}
-                />
-              ))}
+              <Wheel projects={projects} />
             </>
           }
         />

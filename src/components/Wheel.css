@@ -1,0 +1,55 @@
+/* Tall invisible container – same as before */
+.wheel-scroll-container {
+  height: 200vh;
+  pointer-events: none;
+}
+
+/* Fixed wheel – left offset now controlled by inline style */
+.wheel-fixed {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Items – base styles, size set inline via JS */
+.wheel-item {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  cursor: pointer;
+  background: white;
+  will-change: transform, opacity;
+  pointer-events: auto;
+}
+
+.wheel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-label {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 12px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/* Optional: adjust label font size on small screens */
+@media (max-width: 768px) {
+  .item-label {
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-label {
+    font-size: 0.8rem;
+    margin-top: 4px;
+  }
+}

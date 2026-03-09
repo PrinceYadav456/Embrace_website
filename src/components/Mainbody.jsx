@@ -3,7 +3,9 @@ import "./Mainbody.css";
 import { Link, useLocation } from "react-router-dom";
 
 /* === ADDED: Framer motion scroll hooks === */
+
 import {
+  /* eslint-disable-next-line no-unused-vars */
   motion,
   useScroll,
   useTransform,
