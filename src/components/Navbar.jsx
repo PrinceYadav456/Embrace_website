@@ -10,7 +10,7 @@ const Navbar = ({ color }) => {
       <div className="nav-container">
 
         <div className="logo">
-          DE2 <br /> K24
+          DE2© <br /> K24
         </div>
 
         {/* ✅ HAMBURGER (mobile only) */}
